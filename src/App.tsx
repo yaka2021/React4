@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Avatar from "@mui/material/Avatar";
+import Typography from "@mui/material/Typography";
+import "./App.scss";
 
-function App() {
+export const App = () => {
+  const name: string = "山崎　和喜";
+  const profile: string = "持っている資格：基本情報技術者";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>kazuki's portfolio site</h1>
+      <Card sx={{ width: 500, height: 500 }} className="card">
+        <CardContent>
+          <Avatar
+            alt="sample"
+            src=""
+            sx={{ width: 200, height: 200 }}
+            className="img"
+          />
+          <Typography variant="h4" className="name">
+            {name}
+          </Typography>
+          <Typography variant="h5" className="profile">
+            {profile}
+          </Typography>
+        </CardContent>
+      </Card>
     </div>
   );
-}
+};
 
 export default App;
