@@ -10,7 +10,7 @@ export const App = () => {
   const profile: string = "持っている資格：基本情報技術者";
   return (
     <div className="App">
-      <h1>kazuki's portfolio site</h1>
+      <h1>Portfolio</h1>
       <Card sx={{ width: 500, height: 500 }} className="card">
         <CardContent>
           <Avatar
