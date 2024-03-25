@@ -6,11 +6,11 @@ import Typography from "@mui/material/Typography";
 import "./App.scss";
 
 export const App = () => {
-  const name: string = "山崎　和喜";
+  const name: string = "";
   const profile: string = "持っている資格：基本情報技術者";
   return (
     <div className="App">
-      <h1>kazuki's Portfolio</h1>
+      <h1>Portfolio</h1>
       <Card sx={{ width: 500, height: 500 }} className="card">
         <CardContent>
           <Avatar
