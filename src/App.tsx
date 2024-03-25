@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import "./App.scss";
 
 export const App = () => {
-  const name: string = "";
+  const name: string = "山崎　和喜";
   const profile: string = "持っている資格：基本情報技術者";
   return (
     <div className="App">
